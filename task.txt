@@ -1,0 +1,41 @@
+Starting from a class called Vehicle with attributes nr_wheels, color, top_speed and method start_engine which
+returns the speed range, create two sub classes Motorbike and Truck.
+
+1. Create 2 motorbikes and 2 trucks with different arguments.
+
+2. Add a method, get_real_max_speed which returns the max_speed substracting the air resistance
+15 km/h air resistance is available for all motorbikes, 50 km/h for all trucks.
+
+max_speed() -> int
+
+3. Add a method to the parent class convert_to_mph, where the speed is converted into miles/h (1 mile = 1.6 km)
+
+convert_to_mph() -> float (1 decimal digits)
+
+4. Count how many vehicles are currently instantiated using the Parent class.
+e.g. Vehicle.total_number = 4
+
+But if we delete one object, that parameter should reflect that.
+
+e.x.
+if initial we had 4 objects
+Vehicle.total_number = 4
+
+del instance/object
+
+Vehicle.total_number = 3
+
+5. Add a verification method to parent class, that the top speed cannot be modified if the new speed under 50 km/h.
+Note: do not use if logical inside init.
+
+e.x.
+print(m1.speed)	Output:	190
+m1.speed = 21	Output: Speed has to be over 50 km/h.
+print(m1.speed)	Output: 190
+
+print(m1.speed)	Output:	190
+m1.speed = 51	Output:
+print(m1.speed)	Output: 51
+
+######### Use inheritence
+######### Create another solution using composition
